@@ -13,7 +13,7 @@ if (process.env.JAWS_URL) {
 };
 
 // Make connection.
-connection.connect(function(err) {
+connection.connect((err) => {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
