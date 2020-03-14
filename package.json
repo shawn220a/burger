@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Allows the user to input the names of burgers they would like to eat.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn220a/burger.git"
+  },
+  "author": "Shawn Tschoepe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shawn220a/burger/issues"
+  },
+  "homepage": "https://github.com/shawn220a/burger#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
