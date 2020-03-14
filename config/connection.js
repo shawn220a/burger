@@ -1,0 +1,25 @@
+const mysql = require("mysql");
+const connection;
+
+if (process.env.JAWS_URL) {
+  connection = mysql.createConnection(process.env.JAWS_URL);
+} else {mysql.createConnection({
+  host: "localhost",
+  port: 3306,
+  user: "root",
+  password: "shawn220321",
+  database: "burgers"
+});
+};
+
+// Make connection.
+connection.connect(function(err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
+
+// Export connection for our ORM to use.
+module.exports = connection;
