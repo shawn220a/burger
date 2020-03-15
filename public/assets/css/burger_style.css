@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 body {
   background: #faebd7;
 }
@@ -5,7 +9,7 @@ body {
 li {
   padding: 5px;
   margin: 5px;
-  
+  list-style: none;
 }
 
 .label {
